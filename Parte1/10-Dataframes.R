@@ -43,3 +43,38 @@ pesq[1,1]
 pesq[3,2]
 
 # Número de Linhas e Colunas
+nrow(pesq)
+ncol(pesq)
+
+# Primeiros elementos do dataframe
+head(pesq)
+head(mtcars)
+
+# Últimos elementos do dataframe
+tail(pesq)
+tail(mtcars)
+
+# Data frames built-in do R
+?mtcars
+mtcars
+
+# Filtro para um subset de dados que atendem a um critério
+pesq[altura < 1.60,]
+pesq[altura < 1.60, c('codigo', 'olhos')]
+pesq
+
+# Dataframes Nomeados
+names(pesq) <- c("País", "Nome", "Altura", "Código", "Olhos")
+pesq
+
+colnames(pesq) <- c("Var 1", "Var 2", "Var 3", "Var 4", "Var 5")
+rownames(pesq) <- c("Obs 1", "Obs 2", "Obs 3", "Obs 4", "Obs 5")
+pesq
+
+
+# Importando arquivos
+# read.xls() - Excel
+# read.mtp() - Minitab
+# read.spss() - SPSS
+# read.table() - Arquivos txt
+# read.csv() - Arquivos csv
