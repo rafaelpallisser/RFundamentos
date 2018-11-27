@@ -78,3 +78,26 @@ pesq
 # read.spss() - SPSS
 # read.table() - Arquivos txt
 # read.csv() - Arquivos csv
+# read.delim() - Leitura de arquivos delimitados
+
+?read.csv
+df2 <- data.frame(read.csv(file = 'dframe.csv', header = TRUE, sep = ","))
+df2
+head(df2)
+summary(df2)
+
+df2$Diabete
+df2$status
+df2$Status
+
+plot(df2$Admdate)
+
+
+summary(mtcars$mpg)
+plot(mtcars$mpg, mtcars$disp)
+plot(mtcars$mpg, mtcars$wt)
+
+
+# Combinando dataframes
+df3 <- merge(pesq, df2)
+df3
